@@ -1,0 +1,10 @@
+gba/
+.gba/
+
+.stv/*
+!.stv/.gitkeep
+
+.gs/*
+!.gs/.gitkeep
+
+.cloudflare/
