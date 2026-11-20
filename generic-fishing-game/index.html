@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" href="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/generic-fishing-game/icon.png">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/generic-fishing-game/icon.png">
+    <meta charset="utf-8" />
+    <title>Generic Fishing Game</title>
+    <style>
+body {
+  background: #000000;
+  color: #cccccc;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+div.gm4html5_div_class {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  image-rendering: optimizeSpeed;
+  -webkit-interpolation-mode: nearest-neighbor;
+  -ms-touch-action: none;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:-webkit-full-screen #canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="gm4html5_div_class" id="gm4html5_div_id">
+      <canvas id="canvas" width="960" height="540">
+        <p>Your browser doesn't support HTML5 canvas.</p>
+      </canvas>
+    </div>
+
+    <script type="text/javascript" src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/generic-fishing-game/html5game/GenericFishing.js"></script>
+    <script>
+      window.onload = GameMaker_Init;
+    </script>
+    <script>
+      window.onclick = function () {
+        window.focus();
+      };
+    </script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/js/main.js"></script>
+  </body>
+</html>

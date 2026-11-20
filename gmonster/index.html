@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from v6p9d9t4.ssl.hwcdn.net/html/7898356/Game2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2023 15:52:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="manifest" href="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/manifest.webmanifest">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #000000;
+            overflow: hidden;
+		}
+        #canvasArea {
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        
+	</style>
+    <!-- Libs and GDJS core files : -->
+		<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/libs/jshashtable.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/logger.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/gd.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/libs/rbush.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/AsyncTasksManager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/inputmanager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/jsonmanager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/timemanager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/polygon.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/runtimeobject.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/profiler.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/RuntimeInstanceContainer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/runtimescene.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/scenestack.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/force.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/RuntimeLayer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/layer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/RuntimeCustomObjectLayer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/timer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/runtimewatermark.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/runtimegame.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/variable.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/variablescontainer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/oncetriggers.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/runtimebehavior.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/spriteruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/affinetransformation.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/CustomRuntimeObjectInstanceContainer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/CustomRuntimeObject.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/commontools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/variabletools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/runtimescenetools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/inputtools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/objecttools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/cameratools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/soundtools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/storagetools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/stringtools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/windowtools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/events-tools/networktools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/splash/gd-logo-light.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/pixi.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/pixi-filters-tools.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/runtimegame-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/runtimescene-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/layer-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/pixi-image-manager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/pixi-bitmapfont-manager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/spriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/CustomObjectPixiRenderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/DebuggerPixiRenderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/loadingscreen-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/pixi-renderers/pixi-effects-manager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/howler-sound-manager/howler.min.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/howler-sound-manager/howler-sound-manager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/fontfaceobserver-font-manager/fontfaceobserver.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/gdjs-evtsext__ellipsemovement__ellipsemovement.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/gdjs-evtsext__flash__flash.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/gdjs-evtsext__health__health.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/gdjs-evtsext__stayonscreen__stayonscreen.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/Extensions/TextObject/textruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/Extensions/TextObject/textruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/Extensions/TiledSpriteObject/tiledspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/Extensions/TiledSpriteObject/tiledspriteruntimeobject.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/code0.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/code1.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/code2.js" crossorigin="anonymous"></script>
+	<script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/gmonster/data.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    
+	<script>
+
+    (function() {
+        //Initialization
+        var game = new gdjs.RuntimeGame(gdjs.projectData, {});
+
+        //Create a renderer
+        game.getRenderer().createStandardCanvas(document.body);
+
+        //Bind keyboards/mouse/touch events
+        game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
+
+        //Load all assets and start the game
+        game.loadAllAssets(function() {
+            game.startGameLoop();
+        });
+    })();
+
+	</script>
+</body>
+
+<!-- Mirrored from v6p9d9t4.ssl.hwcdn.net/html/7898356/Game2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 May 2023 15:53:08 GMT -->
+</html>

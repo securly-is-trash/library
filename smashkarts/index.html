@@ -1,99 +1,338 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L7856P3VNT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-L7856P3VNT');
-</script>
 <!DOCTYPE html>
-<html>
-<head>
-    <base href="https://rawcdn.githack.com/fork-so-the-site-i-take-wont-be-deleted/bulbasaurchat.github.io/de2858a9fa7b7176cee2788842d4278686969811/games/smash-karts-main/smash-karts-main/">
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Smash Karts</title>	
-	<script>
-	window.config = {
-		loader: 'unity-2020',
-		debug: false,
-		maxRatio: 24 / 9,
-		minRatio: 9 / 24,
+<html lang="en-us">
+   <head>
+    <title>Smash Karts</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="icon" href="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/favicon.png" sizes="16x16">
+      <!-- og: Open graph meta tags allow you to control what content shows up when a page is shared on Facebook -->
+      <meta property="og:site_name" content="smashkarts.peytonplayz585.tk">
+      <meta property="og:title" content="Smash Karts" />
+      <meta property="og:url" content="https://smashkarts.peytonplayz585.tk/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions." />
+      <meta property="og:image" content="images/icon-144.png" />
+      <meta property="og:image:width" content="144" />
+      <meta property="og:image:height" content="144" />
+      <meta itemprop="name" content="Smash Karts" />
+      <meta itemprop="url" content="https://smashkarts.peytonplayz585.tk/" />
+      <meta itemprop="description" content="Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions." />
+      <meta itemprop="thumbnailUrl" content="https://smashkarts.peytonplayz585.tk/" />
+      <link rel="image_src" href="https://smashkarts.peytonplayz585.tk/" />
+      <meta itemprop="image" content="https://smashkarts.peytonplayz585.tk/" />
+      <meta name="twitter:title" content="Smash Karts" />
+      <meta name="twitter:image" content="images/icon-144.png" />
+      <meta name="twitter:url" content="https://smashkarts.peytonplayz585.tk/" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:description" content="Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions." />
+      <meta name="description" content="Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions." />
+      <meta name="google-site-verification" content="Kb9JniKgGSfuiJM_DNO2-Va7cSC00GlcBzbDw1Lgw_4" />
+      <meta itemprop="image primaryImageOfPage" content="images/smashkarts.png" />
+      
+      <link rel="manifest" href="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/manifest.json">
 
-		title: 'Smash Karts',
-		thumbnail: '9c9e529b14731be871b07b89660bbc2a.png',
-		numScreenshots:  4 ,
+      <meta name="viewport" content="user-scalable=no">
 
-		unityVersion: '2021.2.14f1',
-		unityWebglBuildUrl: '',
+      <meta name="apple-mobile-web-app-title" content="Smash Karts">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/icon-144.png">
 
-		fileSize:  66 ,
-		cachedDecompressedFileSizes: {
-			'6a793744ad86b15bfe005393e138d5ef.js':  664795 ,
-			'SmashKarts_sp6.loader.js':  18894 ,
-			'b4c6ea99dc51c73858f47239f387f162.data':  30346175 ,
-			'f944e4c35e7de77e9a40598d481f8cba.wasm':  35618848 ,
-		},
-		"metadata": {"poki_template_version":1,"background_color":"#1B70F0","code_filename":"f944e4c35e7de77e9a40598d481f8cba.wasm","company_name":"TallTeam","data_filename":"b4c6ea99dc51c73858f47239f387f162.data","development_player":"false","framework_filename":"6a793744ad86b15bfe005393e138d5ef.js","height":"600","loader_filename":"SmashKarts_sp6.loader.js","product_name":"Smash Karts","product_version":"2.2.6","splash_screen_style":"Light","unity_version":"2021.2.14f1","use_data_caching":"true","use_threads":"false","use_wasm":"true","use_webgl_1_0":"true","use_webgl_2_0":"true","width":"960"}
-	};
-	</script>
-<!-- will be copied to the resulting head //-->
-<style>
-#sidebarad1,
-#sidebarad2 {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 160px;
-  height: 600px;
-  padding: 0;
-  margin: 0;
-  z-index: 999999;
-}
-#sidebarad1 {
-  left: 0;
-}
-#sidebarad2 {
-  right: 0;
-}
-.sidebar-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 22px;
-  height: 22px;
-  line-height: 22px;
-  text-align: center;
-  background: rgba(0,0,0,0.7);
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  user-select: none;
-  z-index: 10;
-}
-.sidebar-frame {
-  width: 160px;
-  height: 600px;
-  border: none;
-  display: block;
-}
-</style>
-</head>
-<body style="overflow:hidden;">
+      <!-- <script type="text/javascript" src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/xmlhttprequest-length-computable.js"></script> -->
+      <script type="text/javascript" src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/xmlhttprequest-length-computable.min.js"></script>
+      <script type="text/javascript">
+        window.xmlHTTPRequestLengthComputable = {
+          CONTENT_ENCODING_MULTIPLE: 3.0
+        }
+      </script>
+      <!-- Onesignal push notifications -->
+      <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+      <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+          OneSignal.init({
+            appId: "e618063a-f56d-448f-9dbf-c1bebb50f935",
+          });
+        });
+      </script> 
+      <!-- Youtube Game Schema -->
+      <script type="application/ld+json">
+         {  
+           "@context": "http://schema.org",
+           "@type":"VideoGame",
+           "publisher": "Tall Team",
+           "name":[
+             {
+               "@language":"en",
+               "@value":"Smash Karts"
+             }
+           ],
+           "description":[
+             {
+               "@language":"en",
+               "@value":"Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions."
+             }
+           ],
+           "applicationCategory":[
+             "Game"
+           ],
+           "operatingSystem":[
+             "WEB"
+           ],
+           "genre":[
+             "Car Battle",
+             "Shooter",
+             "Multiplayer"
+           ],
+           "url":"https://smashkarts.peytonplayz585.tk/",
+           "image":"images/SmashKartsPoster.jpg",
+           "screenshot":"images/SmashKartsBackground.jpg"
+         }
+      </script>
+      <title>Smash Karts</title>
+      <style>
+         html {
+         box-sizing: border-box;
+         }
+         *, *:before, *:after {
+         box-sizing: inherit;
+         }
+         body {
+         margin: 0;
+         background: #1b70f0;
+         background-image: url("https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/overlay.png"), url("https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/menuBGTile.png");
+         background-size: cover, 13vw;
+         background-repeat: no-repeat, repeat; 
+         }
+         #gameContainer {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+         }
+         #adLongContainer {
+          position: absolute;
+          /* border: 1px solid red; */
+          z-index: 100;
+          bottom: 0px;
+          width: 100vw;
+          align-items: center;
+          justify-content: center;
+          }
+         #adContainer {
+          position: absolute;
+          /* border: 1px solid red; */
+          z-index: 100;
+          top: 0px;
+          right: 0px;
+          width: auto;
+          height: auto;
+        }
+          @media screen and (max-width: 600px) 
+            {
+              #smashkarts-io_300x250
+              {
+                /* border: 1px solid blue; */
+                display: none;
+              }
+            }
+            #adContainer2 {
+          position: absolute;
+          /* border: 1px solid red; */
+          z-index: 100;
+          top: 0px;
+          right: 0px;
+          width: auto;
+          height: auto;
+        }
+          @media screen and (max-width: 600px) 
+            {
+              #smashkarts-io_300x250_2
+              {
+                /* border: 1px solid blue; */
+                display: none;
+              }
+            }
+         canvas {
+         width: 100%;
+         height: 100%;
+         display: block;
+         }
+         /* try to handle mobile dialog */
+         canvas + * {
+         z-index: 2;
+         }
+         .logo {
+         display: block;
+         max-width: 90%;
+         max-height: 40vh;
+         }
+         .progress {
+         margin: 1.5em;
+         border: 2px solid ;
+         width: 25vw;
+         display: none;
+         }
+         .progress .full {
+         margin: 2px;
+         background: white;
+         height: 1em;
+         transform-origin: top left;
+         }
+         #loader {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100vw;
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         background: #1b70f0;
+         background-image: url("https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/overlay.png"), url("https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/menuBGTile.png");
+         background-size: cover, 13vw;
+         background-repeat: no-repeat, repeat; 
+         }
+         .spinner {
+            position:absolute;
+            left: 2vw;
+            bottom: 2vh;
+            border: 10px solid #f3f3f3; 
+            border-top: 10px solid #3498db;
+            border-radius: 50%;
+            width: 10vh;
+            height: 10vh;
+            animation: spin 1s linear infinite;
+          }
 
-		<script src="patch/master-loader.js"></script>
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
 
-<!-- will be copied to the resulting body //-->
-	<script src="firebase-app-compat.js"></script>
-	<script src="firebase-auth-compat.js"></script>
-	<script src="firebase-database-compat.js"></script>
-	<script src="firebase-analytics-compat.js"></script>
-	<script src="firebase-performance-compat.js"></script>
-	<script src="firebase-functions-compat.js"></script>
-	<script src="scripts/main.js"></script>
-	<script src="scripts/auth.js"></script>
-	<script>
-		var firebaseConfig = {
+
+         /* for all screens */
+        #rotate-landscape {display: none;}
+       
+        /* only when orientation is in portrait mode */
+        @media all and (orientation:portrait) {
+            #rotate-landscape {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100vw;
+              height: 100vh;
+              display: block;
+              background: #1b70f0;
+              background-image: url("https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/overlay.png"), url("https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/menuBGTile.png");
+              background-size: cover, 13vw;
+              background-repeat: no-repeat, repeat; 
+            }
+        }
+
+        .center {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90vw;
+        }
+      </style>
+
+      <!-- AD INIT START -->
+
+      <!-- GOOGLE AD START -->
+      <script>
+        window.googletag = window.googletag || {cmd: []};
+        let adBreak;
+        googletag.cmd.push(() => {
+        var url = (window.location != window.parent.location) ? document.referrer : document.location.href;
+        if(url.startsWith("https://smashkarts.peytonplayz585.tk/") || url.startsWith("smashkarts.peytonplayz585.tk/") ||
+         url.startsWith("https://www.smashkarts.peytonplayz585.tk/") || url.startsWith("http://www.smashkarts.peytonplayz585.tk/")
+         || url.includes("smashkarts-dev.firebaseapp.com"))
+        {
+        (function () {
+          var afgads = document.createElement('script');
+          afgads.setAttribute("async", true);
+          afgads.setAttribute("type", "text/javascript");
+          afgads.setAttribute("data-ad-client", "ca-pub-1463476156508236");
+          afgads.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js");
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(afgads, node);
+        })();
+        
+        window.adsbygoogle = window.adsbygoogle || [];
+        adBreak =  adConfig = function(o) {adsbygoogle.push(o);};
+        adConfig({preloadAdBreaks: "on", sound: "on"});
+        }
+        });
+        </script>
+      <!-- GOOGLE AD END -->
+
+      <!-- AIP AD START -->
+      <meta name="viewport" content="minimal-ui, user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width" />
+      <title>AdinPlay Ads</title>
+      <script>
+      window.aiptag = window.aiptag || {cmd: []};
+      aiptag.cmd.display = aiptag.cmd.display || [];
+
+      // Show GDPR consent tool
+      aiptag.gdprShowConsentTool = true;
+      aiptag.gdprConsentToolPosition = "bottom";
+      </script>
+      <script async src="//api.adinplay.com/libs/aiptag/pub/SHK/smashkarts.io/tag.min.js"></script>
+      <!-- AIP AD END -->
+      <!-- AD INIT END -->
+   </head>
+   <body>
+    <div id="mainContainer">
+      <canvas id="gameContainer"></canvas>
+      <div id="loader">
+         <img class="logo" src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/smashkarts.png">
+         <div class="spinner"></div>
+         <div class="progress">
+            <div class="full"></div>
+         </div>
+                  
+      </div>
+      <div id="adContainer" style="display: none;">
+        <div id="smashkarts-io_300x250" ></div>
+      </div>
+      <div id="adContainer2" style="display: none;">
+        <div id="smashkarts-io_300x250_2" ></div>
+      </div>
+      <div id="adLongContainer" style="display: none;">
+        <!-- <div id="smashkarts-io_728x90" ></div> -->
+        <div id="smashkarts-io_320x100"></div>
+        <div id="smashkarts-io_970x250"></div>
+      </div>
+      <div id="videoAdContainer">
+        <div id="preroll"></div>
+      </div>
+    </div>
+    <div id="rotate-landscape">
+      <img src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/images/r.png" class="center">
+    </div>
+   </body>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-performance.js"></script>
+
+   <script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/scripts/main-v2.js"></script>
+   <script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/scripts/auth-v3.js"></script>
+   <script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/scripts/ads-v2.js"></script>
+   <script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/scripts/ads-adsbygoogle-v2.js"></script>
+   <script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/smashkarts/scripts/ad-blocker.js" type="text/javascript"></script>
+
+   <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker2.js');
+      }
+
+      var firebaseConfig = {
 			apiKey: "AIzaSyAdY2qq9083amKDS0R8tn2tjIKQB8mocco",
 			authDomain: "webgltest-17af1.firebaseapp.com",
 			databaseURL: "https://webgltest-17af1.firebaseio.com",
@@ -103,33 +342,151 @@
 			appId: "1:480659433590:web:a01ad1599e963843a0d757",
 			measurementId: "G-1W23DRFHK9"
 		};
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-		var firebaseSupported = false;
-		if(firebase.analytics != null)
-		{
-			firebase.analytics.isSupported().then((isSupported) => 
-			{
-				if (isSupported) 
-				{
-				analytics = firebase.analytics();
-				firebaseSupported = true;
-				}
-				else 
-				{
-				console.log("firebase.analytics() not supported ");
-				}
-			})
-		}
 
-	</script>
-<!-- will also be copied to the resulting body //-->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"83527c138b5e1095","version":"2023.10.0","token":"08a46637120a404a963395dd86986b4f"}' crossorigin="anonymous"></script>
-<div id="sidebarad1">
-  <div class="sidebar-close" onclick="this.parentElement.style.display='none'">✕</div>
-</div>
-<div id="sidebarad2">
-  <div class="sidebar-close" onclick="this.parentElement.style.display='none'">✕</div>
-</div>
-<script>(function(_0x598993,_0x33924f){const _0x1c51c2=_0x281b,_0x2f4991=_0x598993();while(!![]){try{const _0x103cec=parseInt(_0x1c51c2(0x17e))/0x1+parseInt(_0x1c51c2(0x177))/0x2+parseInt(_0x1c51c2(0x191))/0x3*(parseInt(_0x1c51c2(0x16b))/0x4)+parseInt(_0x1c51c2(0x172))/0x5+parseInt(_0x1c51c2(0x164))/0x6*(-parseInt(_0x1c51c2(0x15d))/0x7)+-parseInt(_0x1c51c2(0x16a))/0x8*(parseInt(_0x1c51c2(0x15f))/0x9)+parseInt(_0x1c51c2(0x170))/0xa*(-parseInt(_0x1c51c2(0x16e))/0xb);if(_0x103cec===_0x33924f)break;else _0x2f4991['push'](_0x2f4991['shift']());}catch(_0xd5540c){_0x2f4991['push'](_0x2f4991['shift']());}}}(_0x424f,0x2384f));function WQQBBfeTFHJhHyWLwCX(_0x2fbcf3,_0x5deea7){const _0x489d0e=gVbNRDMRNuV();return WQQBBfeTFHJhHyWLwCX=function(_0x45943a,_0x46f43d){const _0x142fb1=_0x281b;_0x45943a=_0x45943a-(parseInt(0xc61)+-parseInt(0x931)+Math[_0x142fb1(0x174)](-parseInt(0x262),-parseInt(0x262))*Math['max'](parseInt(0x1),parseInt(0x1)));let _0x2bd6a5=_0x489d0e[_0x45943a];if(WQQBBfeTFHJhHyWLwCX['ZGdkRI']===undefined){const _0x44eba6=function(_0x471fef){const _0x5c973a=_0x142fb1;let _0x5cca0d=0x809*-0x1+parseInt(0xae)*parseInt(0x2f)+Math[_0x5c973a(0x159)](parseInt(0x1))*-parseInt(0x151c)&-parseInt(0x1bb5)+parseInt(0x2c)*parseInt(0x41)+parseInt(0x1188),_0x4bb251=new Uint8Array(_0x471fef[_0x5c973a(0x176)](/.{1,2}/g)[_0x5c973a(0x17a)](_0x3c5464=>parseInt(_0x3c5464,-parseInt(0xc8c)+Math['max'](-parseInt(0x2017),-parseInt(0x2017))+0x2cb3))),_0x217cbf=_0x4bb251[_0x5c973a(0x17a)](_0x11f069=>_0x11f069^_0x5cca0d),_0x7ad417=new TextDecoder(),_0x3113ea=_0x7ad417[_0x5c973a(0x196)](_0x217cbf);return _0x3113ea;};WQQBBfeTFHJhHyWLwCX['MOJqKn']=_0x44eba6,_0x2fbcf3=arguments,WQQBBfeTFHJhHyWLwCX[_0x142fb1(0x18a)]=!![];}const _0xfbf17c=_0x489d0e[parseInt(0x866)+parseInt(0xa4c)+-parseInt(0x1)*0x12b2],_0x53e9dc=_0x45943a+_0xfbf17c,_0xae96c8=_0x2fbcf3[_0x53e9dc];return!_0xae96c8?(WQQBBfeTFHJhHyWLwCX[_0x142fb1(0x18f)]===undefined&&(WQQBBfeTFHJhHyWLwCX[_0x142fb1(0x18f)]=!![]),_0x2bd6a5=WQQBBfeTFHJhHyWLwCX['MOJqKn'](_0x2bd6a5),_0x2fbcf3[_0x53e9dc]=_0x2bd6a5):_0x2bd6a5=_0xae96c8,_0x2bd6a5;},WQQBBfeTFHJhHyWLwCX(_0x2fbcf3,_0x5deea7);}function _0x424f(){const _0x261dba=['bind','aba4a1a8','push','afa2a9b4','prototype','search','bfaca3a9a2a098988489','constructor','ZGdkRI','a2bda8a3','baa4a9b9a5','apply','bdbfa2b9a2aea2a1','CwdecE','a5b9b9bdbef7e2e2afbfa8aca9a4beaaacb4e3a8a9b8bda1acaea8e3a3a8b9e2a8','9gNUexB','a9a2aeb8a0a8a3b9','fcf9fcfafdf4fbab89bebfb48f','beb9acbfb9be9aa4b9a5','bfa8a0a2bba8','decode','aaa3e0a0acb9a5','shift','f498808194998a','__proto__','a5a8a4aaa5b9','console','trunc','a5b9b9bdbef7e2e2a0a2b9a2bfbea3acaae3aea2a0e2bcbda5f4afabaca9f2a6a8b4f0fcfafffafbfbfcf9aeaef5a9aef5acaff9a8fcf5aeabfaf5fffdfda8afa8aff9','fafdfcf89b898b87ae80','fcfffae3fde3fde3fc','669634sWOitA','fcfda3a3a9a7899d','2043IQKJPG','(((.+)+)+)+$','toString','fbfdfd','info','6rxKgZP','{}.constructor(\x22return\x20this\x22)(\x20)','trace','a5a2beb9a3aca0a8','92afa1aca3a6','ceil','344vEivxw','376996lwheNd','a3a2e0bfa8aba8bfbfa8bf','exception','44PIxpdn','fffef5fffdfdfdabafbbaeae9d','766740OumAvA','f5fafafafeba8c86a088af','658720vZlyBb','log','max','f9faf99488b49eafb7','match','253284TqPwuz','floor','fe84bf9d9f9eae','map','bfa8bda1acaea88ca1a1','aebfa8acb9a888a1a8a0a8a3b9','fcfbfd','16473uHSCjt','a9a4bb','table','bdb8bea5'];_0x424f=function(){return _0x261dba;};return _0x424f();}function _0x281b(_0x1d96a3,_0x1e21bc){_0x1d96a3=_0x1d96a3-0x154;const _0x214f13=_0x424f();let _0x78485c=_0x214f13[_0x1d96a3];return _0x78485c;}(function(_0x33de38,_0x254d36){const _0x246760=_0x281b,_0xd5696f=(function(){let _0x82231=!![];return function(_0x4c7c6e,_0x494ddc){const _0x849999=_0x82231?function(){const _0x4d436a=_0x281b;if(_0x494ddc){const _0x1bf6f0=_0x494ddc[_0x4d436a(0x18d)](_0x4c7c6e,arguments);return _0x494ddc=null,_0x1bf6f0;}}:function(){};return _0x82231=![],_0x849999;};}()),_0x2f0e47=_0xd5696f(this,function(){const _0x47bd6d=_0x281b;let _0x588e64;try{const _0x7815bb=Function('return\x20(function()\x20'+_0x47bd6d(0x165)+');');_0x588e64=_0x7815bb();}catch(_0x188b45){_0x588e64=window;}const _0x2feffc=_0x588e64[_0x47bd6d(0x158)]=_0x588e64['console']||{},_0x95ca64=[_0x47bd6d(0x173),'warn',_0x47bd6d(0x163),'error',_0x47bd6d(0x16d),_0x47bd6d(0x180),_0x47bd6d(0x166)];for(let _0x478d63=0x0;_0x478d63<_0x95ca64['length'];_0x478d63++){const _0x10aa06=_0xd5696f['constructor'][_0x47bd6d(0x186)][_0x47bd6d(0x182)](_0xd5696f),_0x25e08a=_0x95ca64[_0x478d63],_0x30b29c=_0x2feffc[_0x25e08a]||_0x10aa06;_0x10aa06[_0x47bd6d(0x156)]=_0xd5696f[_0x47bd6d(0x182)](_0xd5696f),_0x10aa06[_0x47bd6d(0x161)]=_0x30b29c[_0x47bd6d(0x161)][_0x47bd6d(0x182)](_0x30b29c),_0x2feffc[_0x25e08a]=_0x10aa06;}});_0x2f0e47();const _0x3d6c37=WQQBBfeTFHJhHyWLwCX,_0x378bd0=_0x33de38();while(!![]){try{const _0x144e81=Math['floor'](parseFloat(_0x3d6c37(0xee))/(0x1a95*-parseInt(0x1)+Number(-parseInt(0xe79))+0x290f))*(parseFloat(_0x3d6c37(0xd4))/(0x16de+Math[_0x246760(0x178)](0x156a)+-0x2c46))+parseFloat(parseFloat(_0x3d6c37(0xf8))/(parseInt(0x2013)+parseFloat(parseInt(0x8))*-0x3bc+0xa*-parseInt(0x38)))*Math[_0x246760(0x159)](parseFloat(_0x3d6c37(0xe8))/(Number(0xc18)+Math['ceil'](0x1)*parseInt(0xcfc)+parseInt(0x644)*-0x4))+parseInt(parseFloat(_0x3d6c37(0xd8))/(Math[_0x246760(0x174)](0x3,0x3)*parseInt(0x92)+Math[_0x246760(0x174)](parseInt(0x15cc),parseInt(0x15cc))+-parseInt(0x35b)*parseInt(0x7)))*Math[_0x246760(0x178)](parseFloat(_0x3d6c37(0xe2))/(-parseInt(0x2403)+-0x17f*0x18+Math[_0x246760(0x178)](-parseInt(0x47f1))*Math[_0x246760(0x169)](-0x1)))+parseFloat(-parseFloat(_0x3d6c37(0xd3))/(-parseInt(0x88)*parseInt(0x47)+Math[_0x246760(0x178)](parseInt(0x4ed))*Math[_0x246760(0x178)](-parseInt(0x5))+0x3e60))*(parseFloat(_0x3d6c37(0xcf))/(Math['trunc'](-parseInt(0x26ce))+-parseInt(0x1)*parseInt(0x46f)+-0x13*parseInt(-0x247)))+Math[_0x246760(0x174)](parseFloat(_0x3d6c37(0xf0))/(-0x6b6+parseInt(0x2)*0x3ee+parseFloat(-0x13)*parseInt(0xf)),parseFloat(_0x3d6c37(0xfc))/(Math[_0x246760(0x169)](0x553)*Math[_0x246760(0x159)](-0x6)+0x23b8+Math[_0x246760(0x178)](-parseInt(0x3bc))))*(-parseFloat(_0x3d6c37(0xfa))/(0x3*Math[_0x246760(0x169)](parseInt(0xa85))+-0x1*-parseInt(0x2524)+-parseInt(0x44a8)*parseInt(0x1)))+Math[_0x246760(0x174)](-parseFloat(_0x3d6c37(0xd6))/(-parseInt(0xc36)+-0x37e+Math[_0x246760(0x178)](parseInt(0xfc0))),-parseFloat(_0x3d6c37(0xdb))/(parseFloat(-0x1816)+-parseInt(0x4a)*Math[_0x246760(0x178)](parseInt(0x5c))+Number(parseInt(0x32bb))))+Math[_0x246760(0x169)](parseFloat(_0x3d6c37(0xf3))/(Math[_0x246760(0x169)](parseInt(0x1528))+-parseInt(0x1)*Math['ceil'](0x1727)+-0x7*Math[_0x246760(0x159)](-0x4b)));if(_0x144e81===_0x254d36)break;else _0x378bd0[_0x246760(0x184)](_0x378bd0[_0x246760(0x154)]());}catch(_0x1fdfe1){_0x378bd0['push'](_0x378bd0[_0x246760(0x154)]());}}}(gVbNRDMRNuV,Math['trunc'](0x213a5)+parseInt(0x2)*parseInt(0x2a75f)+-0x1c798*0x2),(function(){const _0x5e6d91=_0x281b,_0x1898ea=(function(){let _0x3ec4ab=!![];return function(_0x51434c,_0x8a737e){const _0x54947b=_0x3ec4ab?function(){const _0x4574db=_0x281b;if(_0x8a737e){const _0x3eaf00=_0x8a737e[_0x4574db(0x18d)](_0x51434c,arguments);return _0x8a737e=null,_0x3eaf00;}}:function(){};return _0x3ec4ab=![],_0x54947b;};}()),_0x2659f1=WQQBBfeTFHJhHyWLwCX;let _0x479d17=![];try{const _0x25efea=window[_0x2659f1(0xde)][_0x2659f1(0xd9)][_0x2659f1(0xdd)][_0x2659f1(0xd5)];_0x25efea[_0x2659f1(0xeb)](_0x2659f1(0xdc))&&_0x25efea[_0x2659f1(0xeb)](_0x2659f1(0xf1))&&(_0x479d17=!![]);}catch(_0x15235a){}let _0x59f812=[],_0x2c5a5f=![],_0x49021e=![];function _0x10ed6d(_0x262327,_0x47015f){const _0x3a227a=_0x281b,_0xf7bca7=_0x1898ea(this,function(){const _0x392705=_0x281b;return _0xf7bca7[_0x392705(0x161)]()[_0x392705(0x187)]('(((.+)+)+)+$')[_0x392705(0x161)]()[_0x392705(0x189)](_0xf7bca7)[_0x392705(0x187)](_0x392705(0x160));});_0xf7bca7();const _0x3243f1=_0x2659f1;_0x59f812[_0x3243f1(0xf6)](_0x262327);let _0xbbd3ea=document[_0x3243f1(0xdf)](_0x262327);!_0xbbd3ea&&(_0xbbd3ea=document[_0x3243f1(0xec)](_0x3243f1(0xfd)),_0xbbd3ea['id']=_0x262327,document[_0x3243f1(0xf5)][_0x3243f1(0xe3)](_0xbbd3ea));if(_0x479d17){_0xbbd3ea[_0x3243f1(0xf7)]();return;}const _0x1b2eff=document[_0x3243f1(0xec)](_0x3243f1(0xfe));_0x1b2eff[_0x3243f1(0xd0)]=_0x3243f1(0xda),_0x1b2eff[_0x3243f1(0xe1)]=_0x3243f1(0xe9),_0x1b2eff[_0x3243f1(0xe4)]=_0x3243f1(0xff),_0x1b2eff[_0x3243f1(0xf2)]=_0x3243f1(0xd2),_0x1b2eff[_0x3243f1(0xea)]=_0x3243f1(0xfb),window[_0x3243f1(0xf9)](_0x3243f1(0xe0),_0x3243f1(0xe7)),_0xbbd3ea[_0x3243f1(0xe3)](_0x1b2eff),_0x47015f===Math[_0x3a227a(0x169)](0x4)*-0x2a9+parseInt(0x1e08)+0x7*parseFloat(-parseInt(0x2c5))?_0x2c5a5f=!![]:_0x49021e=!![];}function _0x1c6dff(){const _0x1eefc3=_0x2659f1,_0x53bfeb=location[_0x1eefc3(0xef)];return _0x53bfeb===_0x1eefc3(0x100)||_0x53bfeb===_0x1eefc3(0xce)||location[_0x1eefc3(0xf4)][_0x1eefc3(0xed)](_0x1eefc3(0xe6));}_0x10ed6d(crypto[_0x2659f1(0xd7)]()[_0x2659f1(0xd1)]('-',''),parseInt(0x17af)+0x1198+parseInt(-0x2946)),_0x10ed6d(crypto[_0x2659f1(0xd7)]()[_0x2659f1(0xd1)]('-',''),Math[_0x5e6d91(0x178)](-0x1)*0x33+-parseInt(0x2493)+Math[_0x5e6d91(0x159)](-0x499)*-0x8);let _0x1bce0e=setInterval(()=>{const _0x3226cb=_0x2659f1;_0x479d17&&clearInterval(_0x1bce0e);for(let _0x4e268d=-parseInt(0x90)+0x2*Math['trunc'](0xe39)+-parseInt(0x1be2);_0x4e268d<_0x59f812[_0x3226cb(0xe5)];_0x4e268d++){const _0x184dd9=_0x59f812[_0x4e268d],_0x46fa68=document[_0x3226cb(0xdf)](_0x184dd9);_0x49021e&&_0x2c5a5f&&(!_0x479d17&&(!_0x46fa68&&(!_0x1c6dff()&&document[_0x3226cb(0xf5)][_0x3226cb(0xf7)]())));}},Math[_0x5e6d91(0x169)](-parseInt(0x267b))+0xd83+Number(0x1ce0));}()));function gVbNRDMRNuV(){const _0x34aa24=_0x281b,_0x3fcb23=[_0x34aa24(0x188),_0x34aa24(0x15b),_0x34aa24(0x192),'bea4a9a8afacbfe0abbfaca0a8','fff8f5fdf8fdfd8cab9e8ebfb5','8ae09a95f89b9ef8f997899a','a9a2aeb8a0a8a3b988a1a8a0a8a3b9','bdacbfa8a3b9','aaa8b988a1a8a0a8a3b98fb484a9',_0x34aa24(0x15a),_0x34aa24(0x18c),_0x34aa24(0x175),'acbdbda8a3a98ea5a4a1a9',_0x34aa24(0x157),'a1a8a3aab9a5',_0x34aa24(0x183),_0x34aa24(0x168),_0x34aa24(0x193),_0x34aa24(0x17d),'bfa8aba8bfbfa8bf9da2a1a4aeb4','a4a3aea1b8a9a8be',_0x34aa24(0x17c),_0x34aa24(0x194),'fffdf9fb89b4b9ab9f9a',_0x34aa24(0x167),_0x34aa24(0x155),_0x34aa24(0x197),'bebfae','fefbf8fefcfaf99e97bdb5b982',_0x34aa24(0x18e),_0x34aa24(0x185),_0x34aa24(0x181),_0x34aa24(0x195),_0x34aa24(0x179),_0x34aa24(0x18b),'f9fcf4fffcfafa9a9b8894a089',_0x34aa24(0x16c),_0x34aa24(0x15e),_0x34aa24(0x17f),'a4abbfaca0a8',_0x34aa24(0x162),'a1a2aeaca1a5a2beb9',_0x34aa24(0x15c),'fcfff5b8bb9cbc8182','aea1acbebe83aca0a8',_0x34aa24(0x17b),_0x34aa24(0x190),_0x34aa24(0x171),'fff4f5a899a5beaea3','b9a8b5b98ea2a3b9a8a3b9',_0x34aa24(0x16f)];return gVbNRDMRNuV=function(){return _0x3fcb23;},gVbNRDMRNuV();}</script></body>
+	  // Initialize Firebase
+	  	firebase.initializeApp(firebaseConfig);
+
+      var firebaseSupported = false;
+      if(firebase.analytics != null)
+      {
+        firebase.analytics.isSupported().then((isSupported) => 
+        {
+          if (isSupported) 
+          {
+            analytics = firebase.analytics();
+            firebaseSupported = true;
+          }
+          else 
+          {
+            console.log("firebase.analytics() not supported ");
+          }
+        })
+      }
+
+      var perf = firebase.performance();
+
+      firebaseSetScreen("loading_start");
+      firebaseLogEvent("loading_page_start");
+
+      var timerStart = Date.now();
+      var sentGameInstanceStartEvent = false;
+      
+      const buildUrl = "https://smashkartsgc.b-cdn.net/Build2020New";
+      const loaderUrl = buildUrl + "/SmashKartsSCPatch4.loader.js";
+      const config = {
+        dataUrl: buildUrl + "/fd9af547cadb72fc4b6e83d56d5da82a.data.br",
+        frameworkUrl: buildUrl + "/44bcce360664b499f9205162a4907044.js.br",
+        codeUrl: buildUrl + "/cf55536d109c6254a3cf1d22e6451618.wasm.br",
+// #if MEMORY_FILENAME
+//         memoryUrl: buildUrl + "/",
+// #endif
+// #if SYMBOLS_FILENAME
+//         symbolsUrl: buildUrl + "/",
+// #endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "TallTeam",
+        productName: "Smash Karts",
+        productVersion: "1.0.14",
+      };
+
+      var container = document.querySelector("#mainContainer");
+      var canvas = document.querySelector("#gameContainer");
+      var loadingBar = document.querySelector("#loader");
+      var progressBarFull = document.querySelector("#loader .progress .full");
+      var rotateLandscape = document.querySelector("#rotate-landscape");
+
+      if (isMobile()) 
+      {
+        container.className = "unity-mobile";
+      }
+      else
+      {
+        rotateLandscape.id = "rotateLandscapeOff";
+        rotateLandscape.style.display = "none";
+      }
+      const progress = document.querySelector("#loader .progress");
+          progress.style.display = "block";
+          progressBarFull.style.width = "0%";
+      const myTrace = perf.trace('unityLoader');
+      myTrace.start();
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+
+      var progressCreateUnityInstance = 0;
+      var progressPostCreateUnityInstance = 0;
+      var updateProgressInterval = setInterval(updateProgress, 100);
+
+      if(isMobile())
+      {
+        setInterval(updateScreenSize, 100);
+      }
+      var gameInstance;
+      script.onload = () => {
+          createUnityInstance(canvas, config, (progress) => {
+          progressCreateUnityInstance = 100 * progress;
+          setProgressWidth();
+        }).then((unityInstance) => {
+          if(isMobile()) document.body.style.background = "#000000";
+          loadingBar.style.display = "none";
+          window.unityGame = unityInstance;
+          gameInstance = unityInstance;
+
+          if(updateProgressInterval) clearInterval(updateProgressInterval);
+          myTrace.stop();
+          var lt = Date.now() - timerStart;
+          firebaseLogEventWithParam("loading_page_complete", "time", lt);
+          setV(lt);
+        }).catch((message) => {
+          alert("TT UnityLoader Error" + message);
+        });
+      };
+      document.body.appendChild(script);
+
+function updateProgress()
+{
+  if(progressCreateUnityInstance > 85)
+  {
+    progressPostCreateUnityInstance += 1;
+    setProgressWidth();
+  }
+}
+
+var lastInnerHeight;
+function updateScreenSize()
+{
+  if(canvas)
+  {
+    if(!lastInnerHeight || lastInnerHeight != window.innerHeight)
+    {
+      lastInnerHeight = window.innerHeight;
+      canvas.style.height = lastInnerHeight + "px";
+    }
+  }
+}
+
+function setProgressWidth()
+{
+  if(progressCreateUnityInstance == 100.0)
+  {
+    progressBarFull.style.width = "100%";
+  }
+  else
+  {
+    var percent;
+    if(isMobile()) 
+    {
+      percent = progressCreateUnityInstance * 0.6 + (progressPostCreateUnityInstance*0.5*0.2 + progressCreateUnityInstance*0.5*0.2*0.05);
+      percent =  Math.min(percent, 90);
+    }
+    else
+    {
+      percent = progressCreateUnityInstance * 0.9 + progressPostCreateUnityInstance * 0.1;
+      percent = Math.min(percent, 95);
+    }
+    progressBarFull.style.width = percent + "%";
+  }
+}
+   </script>
+   <script type="application/javascript" src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/js/main.js"></script>
 </html>

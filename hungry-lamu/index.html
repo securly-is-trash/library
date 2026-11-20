@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Lamu</title>
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #5B8032;
+      }
+
+      #unity-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #5B8032;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="unity-canvas"></canvas>
+
+    <script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/hungry-lamu/Build/WebGL.loader.js"></script>
+    <script src="https://raw.githubusercontent.com/wnasmile/LAMAR/refs/heads/main/js/main.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebGL.data",
+        frameworkUrl: "Build/WebGL.framework.js",
+        codeUrl: "Build/WebGL.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Kulu",
+        productName: "Hungry Lamu",
+        productVersion: "1.0",
+
+        // Optional but useful for proper scaling:
+        matchWebGLToCanvasSize: true
+      });
+    </script>
+  </body>
+</html>
