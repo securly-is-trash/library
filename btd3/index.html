@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Bloons Tower Defense 3</title>
+
+  <meta property="og:image" content="{game_thumbs}">
+
+  <style>
+    html,
+    body {
+      background: #000 !important;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .webgl-content,
+    #gameContainer,
+    #gamefilearea {
+      background: #000 !important;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    ruffle-player {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #000 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="webgl-content">
+    <div id="gameContainer">
+
+      <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+      <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+
+        window.RufflePlayer.config = {
+          autoplay: "on",
+          unmuteOverlay: "hidden",
+          warnOnUnsupportedContent: false,
+          quality: "high",
+          backgroundColor: "#000000"
+        };
+
+        window.addEventListener("load", () => {
+          const ruffle = window.RufflePlayer.newest();
+          const player = ruffle.createPlayer();
+
+          player.style.width = "100%";
+          player.style.height = "100%";
+          player.style.backgroundColor = "#000000";
+
+          document.getElementById("gameContainer").appendChild(player);
+
+          player.load(
+            "https://raw.githubusercontent.com/ubg89/BloonsTowerDefense3/gh-pages/bloonstd3.swf"
+          );
+        });
+      </script>
+
+    </div>
+  </div>
+
+  <script src="https://raw.githubusercontent.com/ubg89/BloonsTowerDefense3/gh-pages/js/analytics_ubg_v1_4.js"></script>
+  <script src="https://raw.githubusercontent.com/ubg89/BloonsTowerDefense3/gh-pages/js/ubg235_client_v1_1.js"></script>
+</body>
+</html>
