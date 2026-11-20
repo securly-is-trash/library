@@ -7,7 +7,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
 #unity-container,.unity-desktop,#c2canvasdiv,#gameContainer,#game-container{width:100vw!important;height:100vh!important;max-width:100vw!important;max-height:100vh!important}
 </style>
     <meta charset="utf-8">
-    <base href="https://cdn.jsdelivr.net/gh/bubbls/ports@main/arthurs-nightmare/">
+    <base href="https://raw.githubusercontent.com/bubbls/ports/main/arthurs-nightmare/">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Arthur's Nightmare</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico"> 
@@ -20,7 +20,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
    
     if (typeof url === 'string' && url.includes('StreamingAssets/')) {
       const filename = url.split('StreamingAssets/').pop();
-      url = 'https://cdn.jsdelivr.net/gh/bubbls/ports@main/arthurs-nightmare/StreamingAssets/' + filename;
+      url = 'https://raw.githubusercontent.com/bubbls/ports/main/arthurs-nightmare/StreamingAssets/' + filename;
       args[0] = url;
       console.log('[Fetch Intercepted] Redirecting to:', url);
     }
@@ -32,7 +32,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
   XMLHttpRequest.prototype.open = function(method, url, ...rest) {
     if (typeof url === 'string' && url.includes('StreamingAssets/')) {
       const filename = url.split('StreamingAssets/').pop();
-      url = 'https://cdn.jsdelivr.net/gh/bubbls/ports@main/arthurs-nightmare/StreamingAssets/' + filename;
+      url = 'https://raw.githubusercontent.com/bubbls/ports/main/arthurs-nightmare/StreamingAssets/' + filename;
       console.log('[XHR Intercepted] Redirecting to:', url);
     }
     
@@ -48,7 +48,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
       element.setAttribute = function(name, value) {
         if (name === 'src' && typeof value === 'string' && value.includes('StreamingAssets/')) {
           const filename = value.split('StreamingAssets/').pop();
-          value = 'https://cdn.jsdelivr.net/gh/bubbls/ports@main/arthurs-nightmare/StreamingAssets/' + filename;
+          value = 'https://raw.githubusercontent.com/bubbls/ports/main/arthurs-nightmare/StreamingAssets/' + filename;
           console.log('[Media Element Intercepted] Redirecting to:', value);
         }
         return originalSetAttribute.call(this, name, value);
@@ -58,7 +58,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
         set: function(value) {
           if (typeof value === 'string' && value.includes('StreamingAssets/')) {
             const filename = value.split('StreamingAssets/').pop();
-            value = 'https://cdn.jsdelivr.net/gh/bubbls/ports@main/arthurs-nightmare/StreamingAssets/' + filename;
+            value = 'https://raw.githubusercontent.com/bubbls/ports/main/arthurs-nightmare/StreamingAssets/' + filename;
             console.log('[Media src Intercepted] Redirecting to:', value);
           }
           this.setAttribute('src', value);
@@ -102,7 +102,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
         debug: true
       };
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/merge.js"></script>
+    <script src="https://raw.githubusercontent.com/bubbls/UGS-Assets/main/merge.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       setTimeout(function() {

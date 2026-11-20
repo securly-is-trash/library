@@ -285,7 +285,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
                 addOptions(version_select, versions.versions, versions.default);
                 version_select.addEventListener("change", () => {
                     localStorage.setItem("version", version_select[version_select.selectedIndex].textContent);
-                    window.cdn = "https://cdn.jsdelivr.net/gh/ant9012/emu-updated@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/";
+                    window.cdn = "https://raw.githubusercontent.com/ant9012/emu-updated/7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/";
                 });
             }
             input.addEventListener("change", async () => {
@@ -384,7 +384,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
                 div.appendChild(sub)
                 document.body.appendChild(div)
 
-                const cdn = window.cdn || "https://cdn.jsdelivr.net/gh/ant9012/emu-updated@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/"
+                const cdn = window.cdn || "https://raw.githubusercontent.com/ant9012/emu-updated/7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/"
 
                 window.EJS_player = "#game";
                 window.EJS_gameName = parts.shift();
@@ -455,7 +455,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
                         option.textContent = version;
                     }
                     option.selected = true;
-                    window.cdn = "https://cdn.jsdelivr.net/gh/ant9012/emu-updated@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/";
+                    window.cdn = "https://raw.githubusercontent.com/ant9012/emu-updated/7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/";
                     select.appendChild(option);
                 }
             }

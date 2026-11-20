@@ -21,9 +21,9 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
       <meta charset="utf-8">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <title>Block Blast Puzzle</title>
-      <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/tinklegames/bl/TemplateData/favicon.ico">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tinklegames/bl/TemplateData/style.css">
-      <link rel="manifest" href="https://cdn.jsdelivr.net/gh/tinklegames/bl/manifest.webmanifest">
+      <link rel="shortcut icon" href="https://raw.githubusercontent.com/tinklegames/bl/main/TemplateData/favicon.ico">
+      <link rel="stylesheet" href="https://raw.githubusercontent.com/tinklegames/bl/main/TemplateData/style.css">
+      <link rel="manifest" href="https://raw.githubusercontent.com/tinklegames/bl/main/manifest.webmanifest">
    </head>
    <body>
       <div id="unity-container">
@@ -39,7 +39,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
       <script>
          window.addEventListener("load", function () {
            if ("serviceWorker" in navigator) {
-             navigator.serviceWorker.register("https://cdn.jsdelivr.net/gh/tinklegames/bl/ServiceWorker.js");
+             navigator.serviceWorker.register("https://raw.githubusercontent.com/tinklegames/bl/main/ServiceWorker.js");
            }
          });
          var container = document.querySelector("#unity-container");
@@ -65,7 +65,7 @@ canvas{display:block!important;width:100vw!important;height:100vh!important;max-
            updateBannerVisibility();
          }
          
-         var buildUrl = "https://cdn.jsdelivr.net/gh/tinklegames/bl/Build";
+         var buildUrl = "https://raw.githubusercontent.com/tinklegames/bl/main/Build";
          var loaderUrl = buildUrl + "/BlockBlast1.1-8.loader.js";
          var config = {
            dataUrl: buildUrl + "/BlockBlast1.1-8.data.unityweb",
